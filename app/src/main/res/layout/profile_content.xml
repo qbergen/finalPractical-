@@ -9,7 +9,7 @@
         android:layout_height="@dimen/profile_image_size"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/white_space"
-        android:src="@drawable/queenaescmag" />
+        android:src="@drawable/femaleprofile" />
 
     <RelativeLayout
         android:id="@+id/imageButtonContainer"

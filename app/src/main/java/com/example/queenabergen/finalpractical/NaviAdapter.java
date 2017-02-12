@@ -1,5 +1,6 @@
 package com.example.queenabergen.finalpractical;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -45,7 +46,7 @@ public class NaviAdapter extends RecyclerView.Adapter<NaviAdapter.MyViewHolder> 
                             break;
                         case 3:
                             Toast.makeText(v.getContext(), "Selected Login Activity", Toast.LENGTH_SHORT).show();
-                            
+                            finish();
                     }
                 }
             });
@@ -58,6 +59,13 @@ public class NaviAdapter extends RecyclerView.Adapter<NaviAdapter.MyViewHolder> 
                 .inflate(R.layout.button_layout, parent, false);
         return new NaviAdapter.MyViewHolder(itemView);
 
+    }
+
+    public void finish(){
+        Activity activity = new Activity();
+        activity.finish();
+        System.exit(0);
+        finish();
     }
 
     @Override
