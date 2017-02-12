@@ -8,7 +8,8 @@
         android:layout_width="@dimen/profile_image_size"
         android:layout_height="@dimen/profile_image_size"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/white_space" />
+        android:layout_marginBottom="@dimen/white_space"
+        android:src="@drawable/queenaescmag" />
 
     <RelativeLayout
         android:id="@+id/imageButtonContainer"
@@ -26,7 +27,8 @@
             android:layout_marginLeft="@dimen/profile_margins"
             android:layout_marginRight="@dimen/profile_margins"
             android:layout_marginTop="@dimen/profile_margins"
-            android:scaleType="fitXY" />
+            android:scaleType="fitXY"
+            android:src="@drawable/hearticon" />
 
 
         <TextView
@@ -49,7 +51,8 @@
             android:layout_marginRight="@dimen/profile_margins"
             android:layout_marginTop="@dimen/profile_margins"
             android:layout_toRightOf="@id/imageButtonRow1"
-            android:scaleType="fitXY" />
+            android:scaleType="fitXY"
+            android:src="@drawable/messageicon" />
 
 
         <TextView
@@ -73,7 +76,8 @@
             android:layout_marginRight="@dimen/profile_margins"
             android:layout_marginTop="@dimen/profile_margins"
             android:layout_toRightOf="@id/imageButtonRow2"
-            android:scaleType="fitXY" />
+            android:scaleType="fitXY"
+            android:src="@drawable/settingsicon" />
 
         <TextView
             android:id="@+id/buttonText3"
@@ -96,7 +100,8 @@
             android:layout_marginRight="@dimen/profile_margins"
             android:layout_marginTop="@dimen/profile_margins"
             android:layout_toRightOf="@id/imageButtonRow3"
-            android:scaleType="fitXY" />
+            android:scaleType="fitXY"
+            android:src="@drawable/logout" />
 
         <TextView
             android:id="@+id/buttonText4"

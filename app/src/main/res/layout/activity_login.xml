@@ -11,26 +11,25 @@
     tools:context="com.example.queenabergen.finalpractical.LoginActivity">
 
     <EditText
+        android:id="@+id/userNameInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
         android:hint="@string/user_Name"
-        android:ems="10"
-        android:id="@+id/userNameInput" />
+        android:inputType="textPersonName" />
 
     <EditText
+        android:id="@+id/passWordInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:hint="@string/pass_word"
         android:layout_below="@+id/userNameInput"
-        android:id="@+id/passWordInput" />
+        android:hint="@string/pass_word"
+        android:inputType="textWebPassword" />
 
     <Button
         android:id="@+id/submit_btn"
-        android:layout_below="@id/passWordInput"
-        android:text="@string/Submit"
-        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passWordInput"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Submit" />
 </RelativeLayout>

@@ -1,6 +1,5 @@
 package com.example.queenabergen.finalpractical;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -17,10 +16,8 @@ import android.widget.Toast;
 
 public class NaviAdapter extends RecyclerView.Adapter<NaviAdapter.MyViewHolder> {
     ImageView iconWidget;
-    ImageView naviImage;
     RelativeLayout relativeLayout;
     TextView buttonTitle;
-    Context mContext;
 
     int[] buttonTitles = {R.string.Button_1, R.string.Button_2, R.string.Button_3, R.string.Button_4};
     int[] naviIcons = {R.drawable.hearticon, R.drawable.messageicon, R.drawable.settingsicon, R.drawable.logout};
@@ -48,7 +45,7 @@ public class NaviAdapter extends RecyclerView.Adapter<NaviAdapter.MyViewHolder> 
                             break;
                         case 3:
                             Toast.makeText(v.getContext(), "Selected Login Activity", Toast.LENGTH_SHORT).show();
-
+                            
                     }
                 }
             });

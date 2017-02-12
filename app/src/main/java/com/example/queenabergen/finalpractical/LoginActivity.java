@@ -11,8 +11,6 @@ import android.widget.Toast;
 public class LoginActivity extends AppCompatActivity {
     private EditText username;
     private EditText password;
-    private String userInformation;
-    private String passwordInformation;
     private Button submit;
 
 
@@ -21,29 +19,21 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         username = (EditText) findViewById(R.id.userNameInput);
-        userInformation = username.getText().toString();
         password = (EditText) findViewById(R.id.passWordInput);
-        passwordInformation = password.getText().toString();
         submit = (Button) findViewById(R.id.submit_btn);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                emptyEditText();
+                if (username.getText().toString().isEmpty()) {
+                    Toast.makeText(getApplicationContext(), getString(R.string.Enter_User_Toast), Toast.LENGTH_SHORT).show();
+                } else if (password.getText().toString().isEmpty()) {
+                    Toast.makeText(getApplicationContext(), getString(R.string.Enter_Password_Toast), Toast.LENGTH_SHORT).show();
+                } else {
+                    Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
+                    startActivity(intent);
+                }
             }
         });
 
     }
-
-    public void emptyEditText() {
-        if (!userInformation.isEmpty()) {
-            Toast.makeText(getApplicationContext(), getString(R.string.Enter_User_Toast), Toast.LENGTH_SHORT).show();
-        } else if (!passwordInformation.isEmpty()) {
-            Toast.makeText(getApplicationContext(), getString(R.string.Enter_Password_Toast), Toast.LENGTH_SHORT).show();
-        } else {
-            Intent intent = new Intent(getApplicationContext(), ProfileActivity.class);
-            startActivity(intent);
-
-        }
-    }
-
 }

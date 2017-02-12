@@ -10,6 +10,8 @@
     <string name="Button_3">Button3</string>
     <string name="Button_4">Button4</string>
     <string name="settingsTitle">Integer.MAX_VALUE</string>
+    <string name="displayText">Settings - </string>
+    <string name="SettingsString">Settings - </string>
 
 
 </resources>
