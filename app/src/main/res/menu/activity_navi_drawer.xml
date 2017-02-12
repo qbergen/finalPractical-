@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="@string/Button_1" />
+    <item
+        android:id="@+id/nav_arts"
+        android:title="@string/Button_2" />
+    <item
+        android:id="@+id/nav_business"
+        android:title="@string/Button_3" />
+    <item
+        android:id="@+id/nav_athletics"
+        android:title="@string/Button_4" />
+
+</menu>

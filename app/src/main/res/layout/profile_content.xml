@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="@dimen/profile_image_size"
+        android:layout_height="@dimen/profile_image_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/white_space" />
+
+    <RelativeLayout
+        android:id="@+id/imageButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonRow1"
+            android:layout_width="@dimen/image_btn_size"
+            android:layout_height="@dimen/image_btn_size"
+            android:layout_marginBottom="@dimen/profile_margins"
+            android:layout_marginLeft="@dimen/profile_margins"
+            android:layout_marginRight="@dimen/profile_margins"
+            android:layout_marginTop="@dimen/profile_margins"
+            android:scaleType="fitXY" />
+
+
+        <TextView
+            android:id="@+id/buttonText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageButtonRow1"
+            android:layout_marginBottom="@dimen/profile_margins"
+            android:layout_marginLeft="@dimen/profile_margins"
+            android:layout_marginRight="@dimen/profile_margins"
+            android:layout_marginTop="@dimen/profile_margins"
+            android:text="Button 1" />
+
+        <ImageButton
+            android:id="@+id/imageButtonRow2"
+            android:layout_width="@dimen/image_btn_size"
+            android:layout_height="@dimen/image_btn_size"
+            android:layout_marginBottom="@dimen/profile_margins"
+            android:layout_marginLeft="@dimen/profile_margins"
+            android:layout_marginRight="@dimen/profile_margins"
+            android:layout_marginTop="@dimen/profile_margins"
+            android:layout_toRightOf="@id/imageButtonRow1"
+            android:scaleType="fitXY" />
+
+
+        <TextView
+            android:id="@+id/buttonText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageButtonRow2"
+            android:layout_marginBottom="@dimen/profile_margins"
+            android:layout_marginLeft="@dimen/profile_margins"
+            android:layout_marginRight="@dimen/profile_margins"
+            android:layout_marginTop="@dimen/profile_margins"
+            android:layout_toRightOf="@id/buttonText1"
+            android:text="Button 2" />
+
+        <ImageButton
+            android:id="@+id/imageButtonRow3"
+            android:layout_width="@dimen/image_btn_size"
+            android:layout_height="@dimen/image_btn_size"
+            android:layout_marginBottom="@dimen/profile_margins"
+            android:layout_marginLeft="@dimen/profile_margins"
+            android:layout_marginRight="@dimen/profile_margins"
+            android:layout_marginTop="@dimen/profile_margins"
+            android:layout_toRightOf="@id/imageButtonRow2"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/buttonText3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageButtonRow3"
+            android:layout_marginBottom="@dimen/profile_margins"
+            android:layout_marginLeft="@dimen/profile_margins"
+            android:layout_marginRight="@dimen/profile_margins"
+            android:layout_marginTop="@dimen/profile_margins"
+            android:layout_toRightOf="@id/imageButtonRow2"
+            android:text="Button 3 " />
+
+        <ImageButton
+            android:id="@+id/imageButtonRow4"
+            android:layout_width="@dimen/image_btn_size"
+            android:layout_height="@dimen/image_btn_size"
+            android:layout_marginBottom="@dimen/profile_margins"
+            android:layout_marginLeft="@dimen/profile_margins"
+            android:layout_marginRight="@dimen/profile_margins"
+            android:layout_marginTop="@dimen/profile_margins"
+            android:layout_toRightOf="@id/imageButtonRow3"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/buttonText4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageButtonRow4"
+            android:layout_marginBottom="@dimen/profile_margins"
+            android:layout_marginLeft="@dimen/profile_margins"
+            android:layout_marginRight="@dimen/profile_margins"
+            android:layout_marginTop="@dimen/profile_margins"
+            android:layout_toRightOf="@id/buttonText3"
+            android:text="Button 4" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FinalPractical</string>
+    <string name="user_Name">Username</string>
+    <string name="pass_word">Password</string>
+    <string name="Submit">Submit</string>
+    <string name="Enter_User_Toast">Enter a username</string>
+    <string name="Enter_Password_Toast">Enter a password</string>
+    <string name="Button_1">Button1</string>
+    <string name="Button_2">Button2</string>
+    <string name="Button_3">Button3</string>
+    <string name="Button_4">Button4</string>
+    <string name="settingsTitle">Integer.MAX_VALUE</string>
+
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/buttonHolder"
+    android:layout_height="@dimen/list_height"
+    android:layout_centerVertical="true"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iconNavi"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/icon_padding"
+        android:paddingStart="@dimen/icon_padding"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size" />
+
+    <TextView
+        android:id="@+id/buttonTitle"
+        android:layout_weight="1"
+        android:layout_toRightOf="@id/iconNavi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
